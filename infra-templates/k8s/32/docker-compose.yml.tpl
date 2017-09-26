@@ -4,6 +4,7 @@ kubelet:
         io.rancher.container.create_agent: "true"
         io.rancher.container.agent.role: environmentAdmin
         io.rancher.scheduler.global: "true"
+        com.example.com.foo: "bar"
         {{- if eq .Values.CONSTRAINT_TYPE "required" }}
         io.rancher.scheduler.affinity:host_label: compute=true
         {{- end }}
