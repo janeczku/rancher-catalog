@@ -7,6 +7,7 @@ kubelet:
         {{- if eq .Values.CONSTRAINT_TYPE "required" }}
         io.rancher.scheduler.affinity:host_label: compute=true
         {{- end }}
+        com.example.foo: "bar"
     command:
         - kubelet
         - --kubeconfig=/etc/kubernetes/ssl/kubeconfig
