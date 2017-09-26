@@ -1,5 +1,3 @@
-name: Kubernetes
+name: Kubernetes-Azure
 version: v1.7.4-rancher2
 category: Orchestration
-labels:
-  io.rancher.certified: rancher
